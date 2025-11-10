@@ -1,0 +1,18 @@
+<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="21.063397000000002">
+<testsuite name="LoginTest.spec.js" timestamp="2025-11-10T10:51:23.486Z" hostname="chromium" tests="7" failures="0" skipped="0" time="61.387" errors="0">
+<testcase name="TS01 › TC_Login_001 - Login with valid credentials" classname="LoginTest.spec.js" time="8.405">
+</testcase>
+<testcase name="TS01 › TC_Login_002 - Login with invalid Username and Invalid Password" classname="LoginTest.spec.js" time="10.951">
+</testcase>
+<testcase name="TS01 › TC_Login_003 - Login with Invalid Username and valid Password" classname="LoginTest.spec.js" time="11.392">
+</testcase>
+<testcase name="TS01 › TC_Login_004 - Login with valid Username and Invalid Password" classname="LoginTest.spec.js" time="10.301">
+</testcase>
+<testcase name="TS01 › TC_Login_005 - Login without enter the Username" classname="LoginTest.spec.js" time="7.367">
+</testcase>
+<testcase name="TS01 › TC_Login_006 - Login without enter the Password" classname="LoginTest.spec.js" time="6.583">
+</testcase>
+<testcase name="TS01 › TC_Login_007 - Login without enter the Username and Password" classname="LoginTest.spec.js" time="6.388">
+</testcase>
+</testsuite>
+</testsuites>
