@@ -1,18 +1,37 @@
-<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="21.063397000000002">
-<testsuite name="LoginTest.spec.js" timestamp="2025-11-10T10:51:23.486Z" hostname="chromium" tests="7" failures="0" skipped="0" time="61.387" errors="0">
-<testcase name="TS01 › TC_Login_001 - Login with valid credentials" classname="LoginTest.spec.js" time="8.405">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="61.83812399999999">
+<testsuite name="vehicleTest.spec.js" timestamp="2025-11-11T04:48:25.179Z" hostname="chromium" tests="6" failures="0" skipped="0" time="58.739" errors="0">
+<testcase name="TS02 › TC_Login_001 - Login with valid credentials" classname="vehicleTest.spec.js" time="4.54">
 </testcase>
-<testcase name="TS01 › TC_Login_002 - Login with invalid Username and Invalid Password" classname="LoginTest.spec.js" time="10.951">
+<testcase name="TS02 › TC_Vehicle_001 - Verify that the Vehicle module loads successfully and displays vehicle data correctly." classname="vehicleTest.spec.js" time="9.968">
+<system-out>
+<![CDATA[Total Vehicle Cards: [33m13[39m
+]]>
+</system-out>
 </testcase>
-<testcase name="TS01 › TC_Login_003 - Login with Invalid Username and valid Password" classname="LoginTest.spec.js" time="11.392">
+<testcase name="TS02 › TC_Vehicle_002 - Verify that the vehicle card displays the vehicle details." classname="vehicleTest.spec.js" time="4.239">
 </testcase>
-<testcase name="TS01 › TC_Login_004 - Login with valid Username and Invalid Password" classname="LoginTest.spec.js" time="10.301">
+<testcase name="TS02 › TC_Vehicle_003 - Verify that the application allows updating the vehicle details with valid data." classname="vehicleTest.spec.js" time="13.005">
+<system-out>
+<![CDATA[Vehicle info updated successfully
+]]>
+</system-out>
 </testcase>
-<testcase name="TS01 › TC_Login_005 - Login without enter the Username" classname="LoginTest.spec.js" time="7.367">
+<testcase name="TS02 › TC_Vehicle_004 - Ensure the application shows an alert message when updating vehicle details with invalid data." classname="vehicleTest.spec.js" time="20.995">
+<system-out>
+<![CDATA[Free way speed limit should be between 91 and 120
+Non-freeway way speed limit should be between 50 and 90
+]]>
+</system-out>
 </testcase>
-<testcase name="TS01 › TC_Login_006 - Login without enter the Password" classname="LoginTest.spec.js" time="6.583">
-</testcase>
-<testcase name="TS01 › TC_Login_007 - Login without enter the Username and Password" classname="LoginTest.spec.js" time="6.388">
+<testcase name="TS02 › TC_Vehicle_005 - Verify that the Vehicle page displays an alert message when the user does not enter data in any field." classname="vehicleTest.spec.js" time="5.992">
+<system-out>
+<![CDATA[Select DOT inspection date
+Select insurance expiry date
+Select last service date
+Enter Freeway overspeed limit
+Enter Non-freeway overspeed limit
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
