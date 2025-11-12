@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yaantrac Test Automation Report</title>
+<style>
+body {
+font-family: "Segoe UI", Roboto, Arial, sans-serif;
+background: #f0f2f5;
+padding: 30px;
+color: #333;
+}
+ 
+h1 {
+text-align: center;
+margin-bottom: 8px;
+font-size: 28px;
+color: #2c3e50;
+}
+ 
+.meta {
+text-align: center;
+font-size: 14px;
+margin-bottom: 25px;
+color: #555;
+}
+ 
+.summary {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+ 
+.summary-box {
+background: #fff;
+border-radius: 10px;
+padding: 15px 25px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+text-align: center;
+font-weight: bold;
+font-size: 16px;
+min-width: 120px;
+}
+ 
+.summary-box.pass { border-left: 6px solid #2ecc71; }
+.summary-box.fail { border-left: 6px solid #e74c3c; }
+.summary-box.skipped { border-left: 6px solid #f1c40f; }
+.summary-box.total { border-left: 6px solid #3498db; }
+ 
+table {
+width: 100%;
+border-collapse: collapse;
+background: #fff;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+ 
+th, td {
+padding: 12px 15px;
+text-align: left;
+}
+ 
+th {
+background: #34495e;
+color: white;
+font-size: 15px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+ 
+tr:nth-child(even) {
+background: #f9f9f9;
+}
+ 
+tr:hover {
+background: #f1f7ff;
+}
+ 
+.pass { color: #27ae60; font-weight: bold; }
+.fail { color: #c0392b; font-weight: bold; }
+.skipped { color: #d4ac0d; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Yaantrac Test Automation Report</h1>
+<div class="meta">
+Environment: QA | Version: v1.0.0 | Generated: 12/11/2025, 2:52:24 pm
+</div>
+ 
+<!-- Summary Section -->
+<div class="summary">
+<div class="summary-box total">Total: 41</div>
+<div class="summary-box pass">Passed: 41</div>
+<div class="summary-box fail">Failed: 0</div>
+<div class="summary-box skipped">Skipped: 0</div>
+</div>
+ 
+<!-- Detailed Results Table -->
+<table>
+<tr>
+<th>Test Scenario ID</th>
+<th>Test Cases ID</th>
+<th>Test Case Type</th>
+<th>Description</th>
+<th>Date & Time</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC_Login_001</td>
+<td>Smoke</td>
+<td>Login with valid credentials</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.182s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC001</td>
+<td>Functional</td>
+<td>Verify that the Reports module loads successfully</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 4.451s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC002</td>
+<td>Functional</td>
+<td>Verify that the Reports module loads successfully and displays all the required fields.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 24.786s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC003</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.719s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC004</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.886s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC005</td>
+<td>Functional</td>
+<td>Verify that the Device Health report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 2.517s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC006</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.121s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC007</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.687s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC008</td>
+<td>Functional</td>
+<td>Verify that the Device Health report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 4.311s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC009</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.596s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC010</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.697s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC011</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.344s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC012</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 8.732s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC013</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.826s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC014</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.285s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC015</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.729s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC016</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.691s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC017</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.339s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC018</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.218s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC019</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.889s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC020</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.141s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC021</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.723s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC022</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.834s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC023</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.608s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC024</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.708s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC025</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.807s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC026</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.284s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC027</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.235s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC028</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.646s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC029</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.485s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC030</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.083s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC031</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.443s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC032</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.456s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC033</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.634s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC034</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.734s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC035</td>
+<td>Functional</td>
+<td>Verify that the Driver Score report displays the data.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.464s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC036</td>
+<td>Functional</td>
+<td>Send the PDF document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 8.981s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC037</td>
+<td>Functional</td>
+<td>Send the Excel document via email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 6.807s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC038</td>
+<td>Functional</td>
+<td>verify that the alert message display when the user enters invalid email.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 4.672s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC039</td>
+<td>Functional</td>
+<td>Verify that the send mail screen displays the alert message when the user without select the email and document type.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 3.681s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS_04</td>
+<td>TS_04_TC040</td>
+<td>Functional</td>
+<td>Verify that an alert message is shown when the user does not select the mandatory fields.</td>
+<td>12/11/2025, 2:52:24 pm (Duration: 5.37s)</td>
+<td class="pass">Pass</td>
+</tr>
+</table>
+</body>
+</html>
