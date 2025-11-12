@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yaantrac Test Automation Report</title>
+<style>
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f0f2f5;
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.meta {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.summary-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 120px;
+}
+
+.summary-box.pass { border-left: 6px solid #2ecc71; }
+.summary-box.fail { border-left: 6px solid #e74c3c; }
+.summary-box.skipped { border-left: 6px solid #f1c40f; }
+.summary-box.total { border-left: 6px solid #3498db; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background: #34495e;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #f1f7ff;
+}
+
+.pass { color: #27ae60; font-weight: bold; }
+.fail { color: #c0392b; font-weight: bold; }
+.skipped { color: #d4ac0d; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Yaantrac Test Automation Report</h1>
+<div class="meta">
+Environment: QA | Version: v1.0.0 | Generated: 12/11/2025, 3:08:02 pm
+</div>
+
+<!-- Summary Section -->
+<div class="summary">
+  <div class="summary-box total">Total: 68</div>
+  <div class="summary-box pass">Passed: 18</div>
+  <div class="summary-box fail">Failed: 1</div>
+  <div class="summary-box skipped">Skipped: 49</div>
+</div>
+
+<!-- Detailed Results Table -->
+<table>
+<tr>
+  <th>Test Scenario ID</th>
+  <th>Test Cases ID</th>
+  <th>Test Case Type</th>
+  <th>Description</th>
+  <th>Date & Time</th>
+  <th>Status</th>
+</tr>
+
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Login_01</td>
+          <td>Smoke</td>
+          <td>Login with valid credentials</td>
+          <td>12/11/2025, 3:08:07 pm (Duration: 5.358s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_001</td>
+          <td>Functional</td>
+          <td>Verify that the goefence page loads successfully</td>
+          <td>12/11/2025, 3:08:12 pm (Duration: 6.261s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_002</td>
+          <td>Functional</td>
+          <td>Add a new circular geofence with valid data.</td>
+          <td>12/11/2025, 3:08:17 pm (Duration: 14.808s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_003</td>
+          <td>Functional</td>
+          <td>Ensure that the application displays an alert message when the user adds a new geofence with invalid data.</td>
+          <td>12/11/2025, 3:08:22 pm (Duration: 5.854s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_004</td>
+          <td>Functional</td>
+          <td>Ensure that the application displays an alert message when the user adds a new geofence without data.</td>
+          <td>12/11/2025, 3:08:27 pm (Duration: 3.465s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_005</td>
+          <td>Functional</td>
+          <td>Verify that the geofence can be updated with valid data.</td>
+          <td>12/11/2025, 3:08:32 pm (Duration: 14.761s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_006</td>
+          <td>Functional</td>
+          <td>Verify that the geofence can be updated with Invalid data.</td>
+          <td>12/11/2025, 3:08:37 pm (Duration: 5.969s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_007</td>
+          <td>Functional</td>
+          <td>Verify that the application allows the user to assign single vehicle to the geofence.</td>
+          <td>12/11/2025, 3:08:42 pm (Duration: 13.508s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_008</td>
+          <td>Functional</td>
+          <td>Verify that the application allows the user to assign all vehicles to the geofence.</td>
+          <td>12/11/2025, 3:08:47 pm (Duration: 10.497s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_009</td>
+          <td>Functional</td>
+          <td>To check the Mapped vehicle details and geofence Summary.</td>
+          <td>12/11/2025, 3:08:52 pm (Duration: 25.196s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_10</td>
+          <td>Functional</td>
+          <td>Verify that the Geofence Name field displays an error message when the user enters an existing geofence name while creating a new geofence.</td>
+          <td>12/11/2025, 3:08:57 pm (Duration: 14.077s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_011</td>
+          <td>Functional</td>
+          <td>Verify that the application allows the user to deactivate the geofence.</td>
+          <td>12/11/2025, 3:09:02 pm (Duration: 7.623s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_012</td>
+          <td>Functional</td>
+          <td>Verify that the application allows the user to activate the geofence.</td>
+          <td>12/11/2025, 3:09:07 pm (Duration: 7.803s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS_03</td>
+          <td>TS_03_TC_Geofence_013</td>
+          <td>Functional</td>
+          <td>Verify that the application allows the user to delete the geofence.</td>
+          <td>12/11/2025, 3:09:12 pm (Duration: 22.312s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS01</td>
+          <td>TS01_TC_Login_001</td>
+          <td>Smoke</td>
+          <td>Login with valid credentials</td>
+          <td>12/11/2025, 3:09:17 pm (Duration: 4.992s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS01</td>
+          <td>TS01_TC_Login_002</td>
+          <td>Smoke</td>
+          <td>Login with invalid Username and Invalid Password</td>
+          <td>12/11/2025, 3:09:22 pm (Duration: 7.072s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS01</td>
+          <td>TS01_TC_Login_003</td>
+          <td>Smoke</td>
+          <td>Login with Invalid Username and valid Password</td>
+          <td>12/11/2025, 3:09:27 pm (Duration: 7.911s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS01</td>
+          <td>TS01_TC_Login_004</td>
+          <td>Smoke</td>
+          <td>Login with valid Username and Invalid Password</td>
+          <td>12/11/2025, 3:09:32 pm (Duration: 8.153s)</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <td>TS01</td>
+          <td>TS01_TC_Login_005</td>
+          <td>Smoke</td>
+          <td>Login without enter the Username</td>
+          <td>12/11/2025, 3:09:37 pm (Duration: 30.244s)</td>
+          <td class="fail">Fail</td>
+        </tr>
+        <tr>
+          <td>TS01</td>
+          <td>TS01_TC_Login_006</td>
+          <td>Smoke</td>
+          <td>Login without enter the Password</td>
+          <td>12/11/2025, 3:09:42 pm (Duration: 0.474s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS01</td>
+          <td>TS01_TC_Login_007</td>
+          <td>Smoke</td>
+          <td>Login without enter the Username and Password</td>
+          <td>12/11/2025, 3:09:47 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC_Login_001</td>
+          <td>Smoke</td>
+          <td>Login with valid credentials</td>
+          <td>12/11/2025, 3:09:52 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC001</td>
+          <td>Functional</td>
+          <td>Verify that the Reports module loads successfully</td>
+          <td>12/11/2025, 3:09:57 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC002</td>
+          <td>Functional</td>
+          <td>Verify that the Reports module loads successfully and displays all the required fields.</td>
+          <td>12/11/2025, 3:10:02 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC003</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:10:07 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC004</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:10:12 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC005</td>
+          <td>Functional</td>
+          <td>Verify that the Device Health report displays the data.</td>
+          <td>12/11/2025, 3:10:17 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC006</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:10:22 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC007</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:10:27 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC008</td>
+          <td>Functional</td>
+          <td>Verify that the Device Health report displays the data.</td>
+          <td>12/11/2025, 3:10:32 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC009</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:10:37 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC010</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:10:42 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC011</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:10:47 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC012</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:10:52 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC013</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:10:57 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC014</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:11:02 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC015</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:11:07 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC016</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:11:12 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC017</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:11:17 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC018</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:11:22 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC019</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:11:27 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC020</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:11:32 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC021</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:11:37 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC022</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:11:42 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC023</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:11:47 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC024</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:11:52 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC025</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:11:57 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC026</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:12:02 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC027</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:12:07 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC028</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:12:12 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC029</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:12:17 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC030</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:12:22 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC031</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:12:27 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC032</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:12:32 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC033</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:12:37 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC034</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:12:42 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC035</td>
+          <td>Functional</td>
+          <td>Verify that the Driver Score report displays the data.</td>
+          <td>12/11/2025, 3:12:47 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC036</td>
+          <td>Functional</td>
+          <td>Send the PDF document via email.</td>
+          <td>12/11/2025, 3:12:52 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC037</td>
+          <td>Functional</td>
+          <td>Send the Excel document via email.</td>
+          <td>12/11/2025, 3:12:57 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC038</td>
+          <td>Functional</td>
+          <td>verify that the alert message display when the user enters invalid email.</td>
+          <td>12/11/2025, 3:13:02 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC039</td>
+          <td>Functional</td>
+          <td>Verify that the send mail screen displays the alert message when the user without select the email and document type.</td>
+          <td>12/11/2025, 3:13:07 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS_04</td>
+          <td>TS_04_TC040</td>
+          <td>Functional</td>
+          <td>Verify that an alert message is shown when the user does not select the mandatory fields.</td>
+          <td>12/11/2025, 3:13:12 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS02</td>
+          <td>TS02_TC_Login_001</td>
+          <td>Smoke</td>
+          <td>Login with valid credentials</td>
+          <td>12/11/2025, 3:13:17 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS02</td>
+          <td>TS02_TC_Vehicle_001</td>
+          <td>Functional</td>
+          <td>Verify that the Vehicle module loads successfully and displays vehicle data correctly.</td>
+          <td>12/11/2025, 3:13:22 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS02</td>
+          <td>TS02_TC_Vehicle_002</td>
+          <td>Functional</td>
+          <td>Verify that the vehicle card displays the vehicle details.</td>
+          <td>12/11/2025, 3:13:27 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS02</td>
+          <td>TS02_TC_Vehicle_003</td>
+          <td>Functional</td>
+          <td>Verify that the application allows updating the vehicle details with valid data.</td>
+          <td>12/11/2025, 3:13:32 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS02</td>
+          <td>TS02_TC_Vehicle_004</td>
+          <td>Functional</td>
+          <td>Ensure the application shows an alert message when updating vehicle details with invalid data.</td>
+          <td>12/11/2025, 3:13:37 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+        <tr>
+          <td>TS02</td>
+          <td>TS02_TC_Vehicle_005</td>
+          <td>Functional</td>
+          <td>Verify that the Vehicle page displays an alert message when the user does not enter data in any field.</td>
+          <td>12/11/2025, 3:13:42 pm (Duration: 0s)</td>
+          <td class="skipped">Skipped</td>
+        </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yaantrac Test Automation Report</title>
+<style>
+body {
+font-family: "Segoe UI", Roboto, Arial, sans-serif;
+background: #f0f2f5;
+padding: 30px;
+color: #333;
+}
+ 
+h1 {
+text-align: center;
+margin-bottom: 8px;
+font-size: 28px;
+color: #2c3e50;
+}
+ 
+.meta {
+text-align: center;
+font-size: 14px;
+margin-bottom: 25px;
+color: #555;
+}
+ 
+.summary {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+ 
+.summary-box {
+background: #fff;
+border-radius: 10px;
+padding: 15px 25px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+text-align: center;
+font-weight: bold;
+font-size: 16px;
+min-width: 120px;
+}
+ 
+.summary-box.pass { border-left: 6px solid #2ecc71; }
+.summary-box.fail { border-left: 6px solid #e74c3c; }
+.summary-box.skipped { border-left: 6px solid #f1c40f; }
+.summary-box.total { border-left: 6px solid #3498db; }
+ 
+table {
+width: 100%;
+border-collapse: collapse;
+background: #fff;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+ 
+th, td {
+padding: 12px 15px;
+text-align: left;
+}
+ 
+th {
+background: #34495e;
+color: white;
+font-size: 15px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+ 
+tr:nth-child(even) {
+background: #f9f9f9;
+}
+ 
+tr:hover {
+background: #f1f7ff;
+}
+ 
+.pass { color: #27ae60; font-weight: bold; }
+.fail { color: #c0392b; font-weight: bold; }
+.skipped { color: #d4ac0d; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Yaantrac Test Automation Report</h1>
+<div class="meta">
+Environment: QA | Version: v1.0.0 | Generated: 11/11/2025, 10:19:51 am
+</div>
+ 
+<!-- Summary Section -->
+<div class="summary">
+<div class="summary-box total">Total: 6</div>
+<div class="summary-box pass">Passed: 6</div>
+<div class="summary-box fail">Failed: 0</div>
+<div class="summary-box skipped">Skipped: 0</div>
+</div>
+ 
+<!-- Detailed Results Table -->
+<table>
+<tr>
+<th>Test Scenario ID</th>
+<th>Test Cases ID</th>
+<th>Test Case Type</th>
+<th>Description</th>
+<th>Date & Time</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>TS02</td>
+<td>TS02_TC_Login_001</td>
+<td>Smoke</td>
+<td>Login with valid credentials</td>
+<td>11/11/2025, 10:19:51 am (Duration: 4.54s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS02</td>
+<td>TS02_TC_Vehicle_001</td>
+<td>Functional</td>
+<td>Verify that the Vehicle module loads successfully and displays vehicle data correctly.</td>
+<td>11/11/2025, 10:19:51 am (Duration: 9.968s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS02</td>
+<td>TS02_TC_Vehicle_002</td>
+<td>Functional</td>
+<td>Verify that the vehicle card displays the vehicle details.</td>
+<td>11/11/2025, 10:19:51 am (Duration: 4.239s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS02</td>
+<td>TS02_TC_Vehicle_003</td>
+<td>Functional</td>
+<td>Verify that the application allows updating the vehicle details with valid data.</td>
+<td>11/11/2025, 10:19:51 am (Duration: 13.005s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS02</td>
+<td>TS02_TC_Vehicle_004</td>
+<td>Functional</td>
+<td>Ensure the application shows an alert message when updating vehicle details with invalid data.</td>
+<td>11/11/2025, 10:19:51 am (Duration: 20.995s)</td>
+<td class="pass">Pass</td>
+</tr>
+<tr>
+<td>TS02</td>
+<td>TS02_TC_Vehicle_005</td>
+<td>Functional</td>
+<td>Verify that the Vehicle page displays an alert message when the user does not enter data in any field.</td>
+<td>11/11/2025, 10:19:51 am (Duration: 5.992s)</td>
+<td class="pass">Pass</td>
+</tr>
+</table>
+</body>
+</html>

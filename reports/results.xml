@@ -1,18 +1,351 @@
-<testsuites id="" name="" tests="7" failures="0" skipped="0" errors="0" time="21.063397000000002">
-<testsuite name="LoginTest.spec.js" timestamp="2025-11-10T10:51:23.486Z" hostname="chromium" tests="7" failures="0" skipped="0" time="61.387" errors="0">
-<testcase name="TS01 › TC_Login_001 - Login with valid credentials" classname="LoginTest.spec.js" time="8.405">
+<testsuites id="" name="" tests="68" failures="0" skipped="0" errors="0" time="531.8481069999999">
+<testsuite name="geofenceTest.spec.js" timestamp="2025-11-12T09:42:05.735Z" hostname="chromium" tests="14" failures="0" skipped="0" time="152.445" errors="0">
+<testcase name="TS_03 › TC_Login_01 - Login with valid credentials" classname="geofenceTest.spec.js" time="5.171">
 </testcase>
-<testcase name="TS01 › TC_Login_002 - Login with invalid Username and Invalid Password" classname="LoginTest.spec.js" time="10.951">
+<testcase name="TS_03 › TC_Geofence_001 - Verify that the goefence page loads successfully" classname="geofenceTest.spec.js" time="6.14">
 </testcase>
-<testcase name="TS01 › TC_Login_003 - Login with Invalid Username and valid Password" classname="LoginTest.spec.js" time="11.392">
+<testcase name="TS_03 › TC_Geofence_002 - Add a new circular geofence with valid data." classname="geofenceTest.spec.js" time="14.74">
+<system-out>
+<![CDATA[Geofence was created Successfully
+]]>
+</system-out>
 </testcase>
-<testcase name="TS01 › TC_Login_004 - Login with valid Username and Invalid Password" classname="LoginTest.spec.js" time="10.301">
+<testcase name="TS_03 › TC_Geofence_003 - Ensure that the application displays an alert message when the user adds a new geofence with invalid data." classname="geofenceTest.spec.js" time="5.748">
+<system-out>
+<![CDATA[Enter a valid geofence name
+Enter location
+Enter the radius between 0.01Km to 50Km
+]]>
+</system-out>
 </testcase>
-<testcase name="TS01 › TC_Login_005 - Login without enter the Username" classname="LoginTest.spec.js" time="7.367">
+<testcase name="TS_03 › TC_Geofence_004 - Ensure that the application displays an alert message when the user adds a new geofence without data." classname="geofenceTest.spec.js" time="3.469">
+<system-out>
+<![CDATA[Enter geofence name
+Enter location
+Enter geofence radius (km)
+]]>
+</system-out>
 </testcase>
-<testcase name="TS01 › TC_Login_006 - Login without enter the Password" classname="LoginTest.spec.js" time="6.583">
+<testcase name="TS_03 › TC_Geofence_005 - Verify that the geofence can be updated with valid data." classname="geofenceTest.spec.js" time="14.948">
+<system-out>
+<![CDATA[Geofence updated successfully
+]]>
+</system-out>
 </testcase>
-<testcase name="TS01 › TC_Login_007 - Login without enter the Username and Password" classname="LoginTest.spec.js" time="6.388">
+<testcase name="TS_03 › TC_Geofence_006 - Verify that the geofence can be updated with Invalid data." classname="geofenceTest.spec.js" time="5.796">
+<system-out>
+<![CDATA[Enter a valid geofence name
+Enter location
+Enter the radius between 0.01Km to 50Km
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_03 › TC_Geofence_007 - Verify that the application allows the user to assign single vehicle to the geofence." classname="geofenceTest.spec.js" time="15.78">
+<system-out>
+<![CDATA[Geofence Mapping updated successfully
+1
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_03 › TC_Geofence_008 - Verify that the application allows the user to assign all vehicles to the geofence." classname="geofenceTest.spec.js" time="10.931">
+<system-out>
+<![CDATA[Geofence Mapping updated successfully
+1
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_03 › TC_Geofence_009 - To check the Mapped vehicle details and geofence Summary." classname="geofenceTest.spec.js" time="17.415">
+<system-out>
+<![CDATA[PD8161E
+TN02GF1372
+PC6758C
+PC5873J
+PD6758
+PD1708A
+PD3956
+TN02BT5670
+PC8266S
+PC7199J
+PC6694C
+PD8161E
+No Data Found
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_03 › TC_Geofence_10 - Verify that the Geofence Name field displays an error message when the user enters an existing geofence name while creating a new geofence." classname="geofenceTest.spec.js" time="14.263">
+<system-out>
+<![CDATA[Geofence name is already in use , Please enter different name
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_03 › TC_Geofence_011 - Verify that the application allows the user to deactivate the geofence." classname="geofenceTest.spec.js" time="7.804">
+<system-out>
+<![CDATA[Geo Fence was deactivated successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_03 › TC_Geofence_012 - Verify that the application allows the user to activate the geofence." classname="geofenceTest.spec.js" time="7.742">
+<system-out>
+<![CDATA[Geo Fence was activated successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_03 › TC_Geofence_013 - Verify that the application allows the user to delete the geofence." classname="geofenceTest.spec.js" time="22.498">
+<system-out>
+<![CDATA[Geofence deleted successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="LoginTest.spec.js" timestamp="2025-11-12T09:42:05.735Z" hostname="chromium" tests="7" failures="0" skipped="0" time="42.947" errors="0">
+<testcase name="TS01 › TC_Login_001 - Login with valid credentials" classname="LoginTest.spec.js" time="5.154">
+</testcase>
+<testcase name="TS01 › TC_Login_002 - Login with invalid Username and Invalid Password" classname="LoginTest.spec.js" time="8.072">
+</testcase>
+<testcase name="TS01 › TC_Login_003 - Login with Invalid Username and valid Password" classname="LoginTest.spec.js" time="6.918">
+</testcase>
+<testcase name="TS01 › TC_Login_004 - Login with valid Username and Invalid Password" classname="LoginTest.spec.js" time="7.638">
+</testcase>
+<testcase name="TS01 › TC_Login_005 - Login without enter the Username" classname="LoginTest.spec.js" time="4.824">
+</testcase>
+<testcase name="TS01 › TC_Login_006 - Login without enter the Password" classname="LoginTest.spec.js" time="4.811">
+</testcase>
+<testcase name="TS01 › TC_Login_007 - Login without enter the Username and Password" classname="LoginTest.spec.js" time="5.53">
+</testcase>
+</testsuite>
+<testsuite name="reportsTest.spec.js" timestamp="2025-11-12T09:42:05.735Z" hostname="chromium" tests="41" failures="0" skipped="0" time="265.583" errors="0">
+<testcase name="TS_04 › TC_Login_001 - Login with valid credentials" classname="reportsTest.spec.js" time="4.712">
+</testcase>
+<testcase name="TS_04 › TC001 - Verify that the Reports module loads successfully" classname="reportsTest.spec.js" time="3.974">
+</testcase>
+<testcase name="TS_04 › TC002 - Verify that the Reports module loads successfully and displays all the required fields." classname="reportsTest.spec.js" time="24.632">
+<system-out>
+<![CDATA[PDF Downloaded successfully
+Excel Downloaded successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC003 - Send the PDF document via email." classname="reportsTest.spec.js" time="5.669">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC004 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.819">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC005 - Verify that the Device Health report displays the data." classname="reportsTest.spec.js" time="2.291">
+</testcase>
+<testcase name="TS_04 › TC006 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.725">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC007 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.504">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC008 - Verify that the Device Health report displays the data." classname="reportsTest.spec.js" time="4.268">
+</testcase>
+<testcase name="TS_04 › TC009 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.71">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC010 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.672">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC011 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.488">
+</testcase>
+<testcase name="TS_04 › TC012 - Send the PDF document via email." classname="reportsTest.spec.js" time="8.592">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC013 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.58">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC014 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.724">
+</testcase>
+<testcase name="TS_04 › TC015 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.557">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC016 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.703">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC017 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.498">
+</testcase>
+<testcase name="TS_04 › TC018 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.543">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC019 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.953">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC020 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.334">
+</testcase>
+<testcase name="TS_04 › TC021 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.645">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC022 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.99">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC023 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.652">
+</testcase>
+<testcase name="TS_04 › TC024 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.66">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC025 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.809">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC026 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.543">
+</testcase>
+<testcase name="TS_04 › TC027 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.279">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC028 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.757">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC029 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.389">
+</testcase>
+<testcase name="TS_04 › TC030 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.087">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC031 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.885">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC032 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.29">
+</testcase>
+<testcase name="TS_04 › TC033 - Send the PDF document via email." classname="reportsTest.spec.js" time="6.74">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC034 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.793">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC035 - Verify that the Driver Score report displays the data." classname="reportsTest.spec.js" time="5.41">
+</testcase>
+<testcase name="TS_04 › TC036 - Send the PDF document via email." classname="reportsTest.spec.js" time="7.954">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC037 - Send the Excel document via email." classname="reportsTest.spec.js" time="6.893">
+<system-out>
+<![CDATA[Report will be sent to rajalakshmi.r@datayaan.com.
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC038 - verify that the alert message display when the user enters invalid email." classname="reportsTest.spec.js" time="4.762">
+<system-out>
+<![CDATA[Enter valid email id
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC039 - Verify that the send mail screen displays the alert message when the user without select the email and document type." classname="reportsTest.spec.js" time="3.769">
+<system-out>
+<![CDATA[Email Id is required
+Select document type
+]]>
+</system-out>
+</testcase>
+<testcase name="TS_04 › TC040 - Verify that an alert message is shown when the user does not select the mandatory fields." classname="reportsTest.spec.js" time="5.328">
+<system-out>
+<![CDATA[Select report type
+Start Date is required
+End Date is required
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="vehicleTest.spec.js" timestamp="2025-11-12T09:42:05.735Z" hostname="chromium" tests="6" failures="0" skipped="0" time="61.504" errors="0">
+<testcase name="TS02 › TC_Login_001 - Login with valid credentials" classname="vehicleTest.spec.js" time="5.123">
+</testcase>
+<testcase name="TS02 › TC_Vehicle_001 - Verify that the Vehicle module loads successfully and displays vehicle data correctly." classname="vehicleTest.spec.js" time="10.504">
+<system-out>
+<![CDATA[Total Vehicle Cards: [33m13[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="TS02 › TC_Vehicle_002 - Verify that the vehicle card displays the vehicle details." classname="vehicleTest.spec.js" time="4.45">
+</testcase>
+<testcase name="TS02 › TC_Vehicle_003 - Verify that the application allows updating the vehicle details with valid data." classname="vehicleTest.spec.js" time="14.36">
+<system-out>
+<![CDATA[Vehicle info updated successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="TS02 › TC_Vehicle_004 - Ensure the application shows an alert message when updating vehicle details with invalid data." classname="vehicleTest.spec.js" time="23.018">
+<system-out>
+<![CDATA[Free way speed limit should be between 91 and 120
+Non-freeway way speed limit should be between 50 and 90
+]]>
+</system-out>
+</testcase>
+<testcase name="TS02 › TC_Vehicle_005 - Verify that the Vehicle page displays an alert message when the user does not enter data in any field." classname="vehicleTest.spec.js" time="4.049">
+<system-out>
+<![CDATA[Select DOT inspection date
+Select insurance expiry date
+Select last service date
+Enter Freeway overspeed limit
+Enter Non-freeway overspeed limit
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

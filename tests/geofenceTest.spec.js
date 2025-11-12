@@ -1,7 +1,7 @@
 const {test} = require ('@playwright/test');
-const {LoginPage} = require ('../Page/LoginPage');
-const {geofencePage} = require ('../Page/geofencePage');
-const {ExcelReader} = require ('../Utils_Yaantrac/YaantracDataSet');
+const {LoginPage} = require ('../Pages/LoginPage');
+const {geofencePage} = require ('../Pages/geofencePage');
+const {ExcelReader} = require ('../Utils/YaantracDataset');
 
 let page;
 let context;
@@ -21,10 +21,10 @@ test.describe('TS_03', async()=>{
     test('TC_Login_01 - Login with valid credentials', async()=>{
         const loginpage = new LoginPage(page);
         const excelReader = new ExcelReader();
-        const appURL = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Desktop/DatasetYaantrac.xlsx','Link');
+        const appURL = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Documents/AutomationforYaantrac/DatasetYaantrac.xlsx','Link');
         await loginpage.LandingPage(appURL[0].URL);
         await page.waitForTimeout(2000);
-        const loginData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Desktop/DatasetYaantrac.xlsx', 'Login');
+        const loginData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Documents/AutomationforYaantrac/DatasetYaantrac.xlsx', 'Login');
         const {Username, Password} = loginData[0];
         await loginpage.loginPage(Username, Password);
 
@@ -40,7 +40,7 @@ test.describe('TS_03', async()=>{
     test('TC_Geofence_002 - Add a new circular geofence with valid data.', async()=>{
         const geofence = new geofencePage(page);
         const excelReader = new ExcelReader();
-        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Desktop/DatasetYaantrac.xlsx', 'Geofence');
+        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Documents/AutomationforYaantrac/DatasetYaantrac.xlsx', 'Geofence');
         const {GeofenceName, Radius} = geoData[0];
         await geofence.addGeofence(GeofenceName, String(Radius));  
     })
@@ -49,7 +49,7 @@ test.describe('TS_03', async()=>{
     test('TC_Geofence_003 - Ensure that the application displays an alert message when the user adds a new geofence with invalid data.', async()=>{
         const geofence = new geofencePage(page);
         const excelReader = new ExcelReader();
-        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Desktop/DatasetYaantrac.xlsx', 'Geofence');
+        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Documents/AutomationforYaantrac/DatasetYaantrac.xlsx', 'Geofence');
         const {GeofenceName, Radius} = geoData[1];
         await geofence.invalidDataForGeofence(GeofenceName, Radius);
 
@@ -65,7 +65,7 @@ test.describe('TS_03', async()=>{
     test('TC_Geofence_005 - Verify that the geofence can be updated with valid data.', async()=>{
         const geofence = new geofencePage(page);
         const excelReader = new ExcelReader();
-        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Desktop/DatasetYaantrac.xlsx', 'Geofence');
+        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Documents/AutomationforYaantrac/DatasetYaantrac.xlsx', 'Geofence');
         const {GeofenceName, Radius} = geoData[2];
         await geofence.updateGeofence(GeofenceName, String(Radius));
     })
@@ -74,7 +74,7 @@ test.describe('TS_03', async()=>{
     test('TC_Geofence_006 - Verify that the geofence can be updated with Invalid data.', async()=>{
         const geofence = new geofencePage(page);
         const excelReader = new ExcelReader();
-        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Desktop/DatasetYaantrac.xlsx', 'Geofence');
+        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Documents/AutomationforYaantrac/DatasetYaantrac.xlsx', 'Geofence');
         const {GeofenceName, Radius} = geoData[3];
         await geofence.invalidDataForGeofence(GeofenceName, String(Radius));
     }) 
@@ -97,16 +97,15 @@ test.describe('TS_03', async()=>{
         await geofence.GeofenceDetails();
     })
         
-/*
     test('TC_Geofence_10 - Verify that the Geofence Name field displays an error message when the user enters an existing geofence name while creating a new geofence.', async()=>{
         const geofence = new geofencePage(page);
         const excelReader = new ExcelReader();
-        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Desktop/DatasetYaantrac.xlsx', 'Geofence');
+        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Documents/AutomationforYaantrac/DatasetYaantrac.xlsx', 'Geofence');
         const {GeofenceName, Radius} = geoData[4];
         await geofence.ExistingGeofenceName(GeofenceName, String(Radius));
 
     })
-*/
+
 
     //Deactivate the geofence
     test('TC_Geofence_011 - Verify that the application allows the user to deactivate the geofence.', async()=>{
@@ -124,7 +123,7 @@ test.describe('TS_03', async()=>{
     test('TC_Geofence_013 - Verify that the application allows the user to delete the geofence.', async()=>{
         const geofence = new geofencePage(page);
         const excelReader = new ExcelReader();
-        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Desktop/DatasetYaantrac.xlsx', 'Geofence');
+        const geoData = await excelReader.readExcel('C:/Users/RajalakshmiRajasekar/Documents/AutomationforYaantrac/DatasetYaantrac.xlsx', 'Geofence');
         const {GeofenceName, Radius} = geoData[5];
         await geofence.deleteGeofence(GeofenceName, String(Radius));
     })
